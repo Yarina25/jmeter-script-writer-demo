@@ -1,0 +1,18 @@
+# JMeter 运行产物（每次执行都会生成，不入库）
+reports/jtl/*
+reports/html/*
+!reports/jtl/.gitkeep
+!reports/html/.gitkeep
+
+# 本地真实环境配置（含真实域名、账号、密钥，禁止提交）
+env/env.local.md
+env/*.local.md
+
+# 临时与日志
+*.log
+*.bak
+*.tmp
+
+# IDE
+.idea/
+.vscode/
