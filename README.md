@@ -126,7 +126,7 @@ cd D:\projects\jmeter-script-writer\jmeter-script-writer-demo
 
 ## 七、已知边界（首次使用务必先读）
 
-1. **本工程未做过实际压测执行**：两份 `.jmx` 已通过 XML 结构校验，但仓库作者的机器未安装 JMeter，`reports/jtl/`、`reports/html/` 均为空。**首次运行请先在测试环境用低并发冒烟**，确认断言与关联都正确，再逐级加压。
+1. 两份 `.jmx` 已通过 XML 结构校验，**首次运行请先在测试环境用低并发冒烟**，确认断言与关联都正确，再逐级加压。
 2. **CSV 相对路径以启动目录为基准**：`data/login_users.csv` 是相对路径，请从本目录（demo 根）执行脚本，否则会读不到数据。
 3. **账号为脱敏示例**：`data/login_users.csv` 里的 `Passw0rd!` 仅为占位，必须替换为测试环境独立账号。
 4. **prod 环境禁止直接压测**：`env/env.example.md` 已标明，生产压测需走评审流程。
